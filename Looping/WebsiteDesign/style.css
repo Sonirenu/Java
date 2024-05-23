@@ -1,0 +1,209 @@
+*{
+    margin:0; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+        .header{
+    background-color: #ddd;
+    padding: 0 70px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 60px;
+    list-style-type: none;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+.nav li a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: aqua;
+  
+}
+.mySlides2{
+    display: none;
+    height: 250px;
+    
+}
+img {vertical-align: middle;}
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+.dropbtn {
+  text-decoration: none;
+  font-size: 17px;
+  width: auto;
+  padding: 8px 10px;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: green;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.aboutcon{
+  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: aqua;
+
+}
+.img{
+width: 450px;
+height: 100px;
+
+}
+.con{
+  max-width: 1000px;
+  position: relative;
+  background-color: aqua;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+table, th,td{
+            border: 1px solid black;
+            margin: 0 auto;
+            padding-bottom: 0 auto;
+            height: 30px;
+            width: 350px;
+            text-align: center;
+        
+        }
+           .servicescon{
+            max-width: 1000px;
+            position: relative;
+           margin: auto;
+            background-color: aqua;
+    
+           }
+           .co{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.apply_box{
+    
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+.title_small{
+    font-size: 26px;
+}
+.form_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+    gap: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+ font-size: 20px;
+}
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: red;
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+ background-color: #ccc;
+ border: 2px solid red;
+ color: black;
+ transition: 0.3s ease-in;
+ cursor: pointer;
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+@media (max-width: 460px){
+    .textarea_control{
+        grid-column: 1 / span 1;
+    }  
+};

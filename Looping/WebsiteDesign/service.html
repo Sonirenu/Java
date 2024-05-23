@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="header">
+    <h2 class="logo">Goldsmith Institute of  Advanced Research </h2>
+        <ul class="nav">
+            <li><a class="active" href="">Home</a></li>
+            <div class="dropdown">
+              <a class="dropbtn" onclick="myFunction()">About
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content" id="myDropdown">
+                <p><a href="#A3">About us</a></p>
+               <p><a href="#A4">Departments</a></p>
+              </div>
+              </div> 
+            
+            <li><a href="#A5">Service</a></li>
+            <li><a href="#A6">Contact</a></li>
+        </ul>
+</div>
+    <div class="container">
+        <div class="mySlides2">
+            <img src="Ai.jpg" style="height: 450px; width: 1000px; ">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="Web.jpg"style="height: 450px; width: 1000px; ">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="Per.jpg"style="height: 450px; width: 1000px;">
+          </div>
+          <div class="mySlides2">
+            <img src="Bio.jpg"style="height: 450px; width: 1000px;">
+          </div>
+
+       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      
+          <center><h1>Welcome to GIAR</h1><br>
+          <P font-size="49px;">The Organization has been Named after Caption<br> Goldsmith Institute of Advanced Research</b></p> <br><br>         </P>
+      </div></center><hr>
+      <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+        <div class="aboutcon"><br>
+          <h2 id="A3"> <center>About us</center></h2><br>
+          <pre>                                                                             </pre>
+          <p> <center>We have work in Five beings</center> </p><br>
+          <img src="img.jpg"style="height: 450px; width: 1000px;"><br><br><br>
+
+          <h2 id="A4"><center>Departmens</center></h2><br>
+          <pre>                                                                                </pre>
+          <p><center> We have a many departments in our GIAR organisation</center></p><br><br>
+          <center><table border="2px"  cellspacing="10px" cellpadding="5px" bakground color="blue">
+            <tr text-align="center">
+            <th> No. of Dept.</th>
+            <th> Department </th>
+            <th>  HOD </th>
+            </tr>
+            <tr text-align="center">
+              <td> 1 </td>
+              <td> Research & Development</td>
+              <td>  mr. Brijesh Soni </td>
+            </tr>
+            <tr text-align="center">
+              <td> 2 </td>
+              <td> Web Development</td>
+              <td> Mr. Vikas </td>
+            </tr>
+            <tr text-align="center"> 
+              <td> 3 </td>
+              <td> Directorate of Machine Learning</td>
+              <td> Miss. Smita Gupta </td>
+            </tr>
+            <tr text-align="center">
+              <td> 4 </td>
+               <td>Language Department</td>
+                 <td> Mrs. Priyanka Shah</td>
+            </tr>
+            <tr>
+              <td> 5</td>
+              <td> IT Department</td>
+              <td> Miss. Priya shah </td>
+            </tr>
+            <tr text-align="center"> 
+              <td> 6 </td>
+              <td> Brain Research Department</td>
+            <td> Mr. Ronak Dwivedi </td></tr>
+            <tr text-align="center">
+              <td> 7 </td>
+              <td> Acting Department </td>
+              <td>  Mr. Nitin arya</td>
+            </tr>
+            <tr text-align="center">
+              <td> 8</td>
+              <td>  Fashion Department</td>
+              <td>  Miss Karuna Tripathi</td>
+            </tr>
+          </table></center>
+        </div><hr>
+                                                                        
+        <div class="servicescon">
+          <pre>                                                                      </pre>
+         <h1 id="A5"><center>OUR SERVICES</center></h1>
+         <pre>                                                                       </pre>
+         <h3> <center>Internships </center></h3>
+         <pre>                                                                        </pre>
+         <p> <center>GIAR is Offering Internships or all the enthusiasts. <br>
+                       So, if you are interested then enroll yourself excel<br> 
+                       your Research carrer with experinced Professionals.<br>
+                       We hava provided many type of interships. we are a team players..<br>
+                                                       ...........HAPPY LEARNING WITH GIAR</center>
+         </p><br><br><br>
+         <H3> <center>JOB </center></H3>
+         <pre>                                                                          </pre>
+         <P><center>GIAR is a very Good plateform for check your Ability.<br>
+                    if you earn high salaries and enjoy job growth oppotunities <br>
+                    and job security. so you go and Contact with us hurry up!!!</center> </P>
+          <div class="co">
+            <div class="apply_box">
+            <h1>Job Application<span class="title_small">(web)</span></h1>
+            <form action="">
+                <div class="form_container">
+                <div class="form_control">
+                    <label for="first name">First Name</label>
+                    <input id="first_name"name="first_name"placeholder="Enter First Name........"/>
+                </div>
+                <div class="form_control">
+                    <label for="last name">Last Name</label>
+                    <input id="last_name"name="last_name"placeholder="Enter Last Name"/>
+                </div>
+                <div class="form_control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"name="email"placeholder="Enter Email"/>
+                </div>
+                <div class="form_control">
+                    <label for="job role">Job Role</label>
+                    <select id="job role" name="job role">
+                        <option value="Select job Role"></option>
+                        <option value="front-end">Front-end developer</option>
+                        <option value="Back-end">Back-end Developer</option>
+                        <option value="full-stack">Full Stack Developer</option>
+                        <option value="UI-Ux design">UI-UX designer</option>
+                    </select>
+                </div>
+                <div class="textarea_control">
+                    <label for="address">Address</label>
+                    <textarea id="address"name="address"row="4"cols="50"placeholder="Enter Address"></textarea>
+                </div>
+                <div class="form_control">
+                    <label for="city">City</label>
+                    <input  id="city"name="city"placeholder="Enter City"/>
+                </div>
+                <div class="form_control">
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pincode"name="pincode"placeholder="Enter Pincode"/>
+                </div>
+                <div class="form_control">
+                    <label for="date">Date</label>
+                    <input value="2023-05-06"type="date" id="date"name="date"/>
+                </div>
+                <div class="form_control">
+                    <label for="upload">Upload your CV</label>
+                    <input type="file" id="upload"name="upload"/>
+                </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div><hr>
+        <div class="con">
+          <pre>                                                                                       </pre>
+          <div class="apply_box">
+            <h2 id="A6"> CONTACT US </h2>
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first name">First Name</label>
+              <input id="first_name"name="first_name"placeholder="Enter First Name........"/>
+          </div>
+          <div class="form_control">
+              <label for="last name">Last Name</label>
+              <input id="last_name"name="last_name"placeholder="Enter Last Name"/>
+          </div>
+          <div class="form_control">
+              <label for="email">Email</label>
+              <input type="email" id="email"name="email"placeholder="Enter Email"/>
+          </div>
+          <div class="button_container">
+            <button type="submit">Submit</button>
+        </div>
+          </div>
+        </div>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .header{
+    background-color: #ddd;
+    padding: 0 70px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 60px;
+    list-style-type: none;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+.nav li a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+* {box-sizing: border-box}
+ .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="logo">Portfolio</h2>
+        <ul class="nav">
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="Ai.jpg" style="width:500%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Web.jpg" style="width:250px">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Per.jpg" style="width:250px">
+  </div>
+  <div class="mySlides2">
+    <img src="Bio.jpg" style="width:250px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+    <h2 style="text-align:center">Welcome in GIAR</h6>
+    <p style="text-align:center"><b>The Organization has been Named after Caption<br> Goldsmith Institute of Advanced Research</b></p>
+
+
+</body>
+</html> 
